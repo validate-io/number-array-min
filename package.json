@@ -26,12 +26,22 @@
     "validate.io",
     "validate",
     "validation",
-    "validator"
+    "validator",
+    "valid",
+    "array",
+    "min",
+    "minimum",
+    "is",
+    "isarray",
+    "number"
   ],
   "bugs": {
     "url": "https://github.com/validate-io/number-array-min/issues"
   },
-  "dependencies": {},
+  "dependencies": {
+    "validate.io-array": "^1.0.3",
+    "validate.io-number": "^1.0.3"
+  },
   "devDependencies": {
     "chai": "2.x.x",
     "mocha": "2.x.x",

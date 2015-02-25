@@ -17,18 +17,38 @@ For use in the browser, use [browserify](https://github.com/substack/node-browse
 ## Usage
 
 ``` javascript
-var foo = require( 'validate.io-number-array-min' );
+var isValid = require( 'validate.io-number-array-min' );
 ```
 
-#### foo( value )
+#### isValid( value, min )
 
-What does this function do?
+Validates if a `value` is a numeric `array` in which no element exceeds a minimum value.
+
+``` javascript 
+var value = [1,2,3],
+	min = 1;
+
+var bool = isValid( value, min );
+// returns true
+```
 
 
 ## Examples
 
 ``` javascript
-var foo = require( 'validate.io-number-array-min' );
+var isValid = require( 'validate.io-number-array-min' );
+
+console.log( isValid( [1,2,3], 1 ) );
+// returns true
+
+console.log( isValid( [], 1 ) );
+// returns true
+
+console.log( isValid( [1,2,3], 2 ) );
+// returns false
+
+console.log( isValid( [1,NaN,3], 1 ) );
+// returns false
 ```
 
 To run the example code from the top-level application directory,
