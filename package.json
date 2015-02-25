@@ -1,6 +1,6 @@
 {
   "name": "validate.io-number-array-min",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Validates if a value is a numeric array in which no element exceeds a minimum value.",
   "author": {
     "name": "Athan Reines",
